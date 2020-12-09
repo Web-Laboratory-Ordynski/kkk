@@ -1,0 +1,54 @@
+.breed {
+    width: 30%;
+    margin: 1.5%;
+    display: flex;
+    align-items: center;
+    background: ghostwhite;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.breed__title {
+    font-size: 1.1rem;
+    color: peru;
+    margin: 1.5rem 0 1rem 0
+}
+
+.breed__img {
+    width: 100%;
+    height: auto;
+}
+
+.breed__p {
+    width: 100%;
+    line-height: 1.5;
+}
+
+.breed__btn {
+    font: 1.1rem/1.6rem Arial, sans-serif;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background: seagreen;
+    color: #fff;
+    transition: all 0.5s ease-out
+}
+
+.breed__btn:hover {
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 780px) {
+    .breed {
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .breed {
+        width: 100%;
+    }
+}
