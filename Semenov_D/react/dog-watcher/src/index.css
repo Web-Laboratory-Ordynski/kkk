@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    /*1rem=10px*/
+}
+
+body {
+    font: 1.2rem/1.6rem 'Tahoma', sans-serif;
+    background: sandybrown;
+    color: #555;
+}
+
+html, body, body>div {
+    min-height: 100vh;
+}
+
+input:focus, button:focus {
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
