@@ -1,0 +1,76 @@
+.task {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+  color: #fff;
+}
+
+.taskList .task--disabled {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+  color: rgb(37, 204, 21);
+}
+
+.task:hover,
+.task--disabled:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+}
+
+.switch-input {
+  display: none;
+}
+
+.switch-label {
+  display: block;
+  width: 48px;
+  height: 24px;
+  text-indent: -150%;
+  clip: rect(0 0 0 0);
+  color: transparent;
+}
+
+.switch-label::before,
+.switch-label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  cursor: pointer;
+}
+
+.switch-label::before {
+  width: 100%;
+  height: 100%;
+  background-color: #5a5f73;
+  border-radius: 9999em;
+}
+
+.switch-label::after {
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.45);
+}
+
+.switch-input:checked + .switch-label::before {
+  background-color: rgb(37, 204, 21);
+}
+
+.switch-input:checked + .switch-label::after {
+  left: 24px;
+}

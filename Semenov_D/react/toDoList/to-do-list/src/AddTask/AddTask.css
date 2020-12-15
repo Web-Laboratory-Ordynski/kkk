@@ -1,0 +1,35 @@
+.addTask__label {
+  position: absolute;
+  bottom: -40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #333;
+  border: 3px solid #ffffff;
+  font-size: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  left: 50%;
+  color: #fff;
+  margin-left: -40px;
+  box-shadow: 1px 1px 5px #333;
+}
+
+.addTask__label:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background: ghostwhite;
+  color: rgb(37, 204, 21);
+}
+
+.addTask__inp {
+  background: ghostwhite;
+  padding: 1rem;
+  width: 100%;
+  color: rgb(37, 204, 21);
+  width: 100%;
+  border: 2px solid darkslategray;
+  border-radius: 5px;
+  margin-top: 40px;
+  font: 1.2rem/1.6rem "Tahoma", sans-serif;
+}

@@ -1,0 +1,10 @@
+.taskList {
+  position: relative;
+  border-radius: 10px;
+  background-color: #252830;
+  width: 400px;
+  margin: 40px auto;
+  padding: 30px 25px 70px 25px;
+  border: 2px solid #fff;
+  box-shadow: 10px 10px 17px -3px #000000, 10px 10px 15px 10px rgba(0, 0, 0, 0);
+}
