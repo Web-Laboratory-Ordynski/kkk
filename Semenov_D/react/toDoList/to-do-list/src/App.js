@@ -1,10 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import TaskCard from './TaskCard/TaskCard';
-import './AddTask/AddTask';
 import AddTask from './AddTask/AddTask';
-//import Clock from './Clock/Clock';
-
 
 class App extends Component {
   constructor(props) {
@@ -49,9 +46,7 @@ class App extends Component {
 
   render() {
     const reactUserElements = this.state.list.map(task => (
-      <TaskCard task={task} key={task.id} checkboxToggle={this.taskComplitedFunc}>
-        <h1>Hello</h1>
-      </TaskCard>
+      <TaskCard task={task} key={task.id} checkboxToggle={this.taskComplitedFunc}></TaskCard>
     ));
     return (
       <ul className="taskList">

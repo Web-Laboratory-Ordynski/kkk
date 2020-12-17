@@ -24,27 +24,19 @@
 
             })
             .then(function (parsedJson) {
-                parsedJson.forEach((element) => {
+                parsedJson.map((element) => {
                     createElement(element);
                 });
                 function createElement(item) {
-                    let breed = document.createElement('span');
-                    breed.innerText = item.name;
+                    let breed = document.createElement("p");
+                    breed.innerText = "Name : " + item.name;
                     list.appendChild(breed);
                 }
             });
 
 
 
-        // var breedPromise = fetch('https://api.thedogapi.com/v1/breeds/search?q=A');
-        // breedPromise
-        //     .then(response => {
-        //         return response.json();
-        //     })
-        //     .then(breedsArray => {
-        //         console.log(breedsArray)
-        //     });
-
+        
 
     </script>
 
